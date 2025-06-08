@@ -1,0 +1,165 @@
+/* Teksti-tv */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+#main > div.header-inner > div > a {
+    text-decoration: none;
+}
+  
+body {
+  background-color:black;
+  color:#ffffff;
+  /* font-family: 'Press Start 2P', monospace; */
+  font-family: "Jersey 15", sans-serif;
+  font-size: 1rem;
+}
+
+#main, #header, #footer, #copyright {
+  max-width:700px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#copyright {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+#header {
+  text-align:right;
+  font-size: 1.2rem;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  /* padding: 0 0.875rem; */
+  background: #1700ff;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+}
+
+.branding img {
+  margin-right: 1rem;
+}
+
+#main {
+  min-height:730px;
+}
+
+.listleft, .listright {
+  float:left;
+  margin:5px 0px;
+  font-size: 2rem;
+}
+
+.listleft {
+  width:90%;
+  color:#00ffff;
+}
+
+.listright {
+  width:10%;
+  text-align:right;
+}
+
+/* Typograph */
+h1 {
+  font-family: 'Press Start 2P', monospace;
+  text-align: center;
+  /* background-color: #1700ff; */
+  color: #ffffff;
+  margin: 0px;
+  padding: 20px 0px;
+}
+
+.main-title {
+  color: #ffff00;
+  margin: 0;
+}
+
+h3 {
+  color:#ffff00;
+  margin: 0;
+}
+
+hr {
+  height:6px;
+  width:100%;
+  color:#0000ff;
+  background-color:#1700ff;;
+  border:1px solid #1700ff;;
+  margin:20px 0px;
+}
+
+#red, #green, #yellow, #blue {
+  width:25%;
+  display:inline;
+  border:0px;
+  float:left;
+  text-align:center;
+  font-size: 1.4rem;
+}
+
+#red {
+  color:#ff0000;
+}
+
+#green {
+  color:#00ff00;
+}
+
+#yellow {
+  color:#ffff00;
+}
+
+#blue {
+  color:#00ffff;
+}
+
+@media screen and (max-width: 850px) {
+  #header, #main, #footer {
+    width:100%;
+  }
+}
+
+/* Pulse effect */
+.pulse {
+  color: #ffff00;
+  background-color: #000000;
+  animation: pulse 2s infinite;
+  text-align: center;
+}
+
+.front-page-content {
+  max-height: 80vh;
+  font-size: 1.4rem;
+  overflow: scroll;
+  scrollbar-color: transparent;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/* imig border radius off override core styles */
+:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img) {
+    border-radius: 4px;
+}
+
+iframe {
+  width: 100%;
+  height: 420px;
+}
